@@ -1,0 +1,371 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{C0CF3879-C0F0-43D4-89D6-8B3E6C07C1B8}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>GroupProject</RootNamespace>
+    <AssemblyName>GroupProject</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="CrystalDecisions.CrystalReports.Engine, Version=13.0.3500.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.ReportSource, Version=13.0.3500.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Shared, Version=13.0.3500.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Windows.Forms, Version=13.0.3500.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="FlashControlV71, Version=1.0.3187.32366, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="CheckTripStatus.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CheckTripStatus.Designer.cs">
+      <DependentUpon>CheckTripStatus.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Driver Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Driver Form.Designer.cs">
+      <DependentUpon>Driver Form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DriverDetailReport.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DriverDetailReport.Designer.cs">
+      <DependentUpon>DriverDetailReport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DriverDetails.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DriverDetails.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Group.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Group.Designer.cs">
+      <DependentUpon>Group.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Home Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Home Form.Designer.cs">
+      <DependentUpon>Home Form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Movement.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Movement.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="MovementRpt.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MovementRpt.Designer.cs">
+      <DependentUpon>MovementRpt.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MoveUpdate.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MoveUpdate.Designer.cs">
+      <DependentUpon>MoveUpdate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="New Driver.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="New Driver.Designer.cs">
+      <DependentUpon>New Driver.cs</DependentUpon>
+    </Compile>
+    <Compile Include="New trip request.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="New trip request.Designer.cs">
+      <DependentUpon>New trip request.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="DriverView.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DriverView.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="ProjectDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ProjectDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="VehicleMovement.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="VehicleMovement.Designer.cs">
+      <DependentUpon>VehicleMovement.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Remove Driver.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Remove Driver.Designer.cs">
+      <DependentUpon>Remove Driver.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Login Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Login Form.Designer.cs">
+      <DependentUpon>Login Form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Update Vehicle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Update Vehicle.Designer.cs">
+      <DependentUpon>Update Vehicle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserRegistration.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UserRegistration.Designer.cs">
+      <DependentUpon>UserRegistration.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Vehicle Add.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vehicle Add.Designer.cs">
+      <DependentUpon>Vehicle Add.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RemoveVehicle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RemoveVehicle.Designer.cs">
+      <DependentUpon>RemoveVehicle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="VehicleReport.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="VehicleReport.Designer.cs">
+      <DependentUpon>VehicleReport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="VehicleRPT.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>VehicleRPT.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="View Movement.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View Movement.Designer.cs">
+      <DependentUpon>View Movement.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ViewRequest.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ViewRequest.Designer.cs">
+      <DependentUpon>ViewRequest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ViewRequestSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ViewRequestSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="welcome.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="welcome.Designer.cs">
+      <DependentUpon>welcome.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="CheckTripStatus.resx">
+      <DependentUpon>CheckTripStatus.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Driver Form.resx">
+      <DependentUpon>Driver Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DriverDetailReport.resx">
+      <DependentUpon>DriverDetailReport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DriverDetails.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>DriverDetails.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Group.resx">
+      <DependentUpon>Group.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Home Form.resx">
+      <DependentUpon>Home Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Movement.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>Movement.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MovementRpt.resx">
+      <DependentUpon>MovementRpt.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MoveUpdate.resx">
+      <DependentUpon>MoveUpdate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="New Driver.resx">
+      <DependentUpon>New Driver.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="New trip request.resx">
+      <DependentUpon>New trip request.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="VehicleMovement.resx">
+      <DependentUpon>VehicleMovement.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Remove Driver.resx">
+      <DependentUpon>Remove Driver.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Login Form.resx">
+      <DependentUpon>Login Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Update Vehicle.resx">
+      <DependentUpon>Update Vehicle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserRegistration.resx">
+      <DependentUpon>UserRegistration.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vehicle Add.resx">
+      <DependentUpon>Vehicle Add.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RemoveVehicle.resx">
+      <DependentUpon>RemoveVehicle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="VehicleReport.resx">
+      <DependentUpon>VehicleReport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="VehicleRPT.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>VehicleRPT.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View Movement.resx">
+      <DependentUpon>View Movement.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ViewRequest.resx">
+      <DependentUpon>ViewRequest.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="welcome.resx">
+      <DependentUpon>welcome.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="DriverView.xsc">
+      <DependentUpon>DriverView.xsd</DependentUpon>
+    </None>
+    <None Include="DriverView.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DriverView.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DriverView.xss">
+      <DependentUpon>DriverView.xsd</DependentUpon>
+    </None>
+    <None Include="ProjectDataSet.xsc">
+      <DependentUpon>ProjectDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="ProjectDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ProjectDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="ProjectDataSet.xss">
+      <DependentUpon>ProjectDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <None Include="ViewRequestSet.xsc">
+      <DependentUpon>ViewRequestSet.xsd</DependentUpon>
+    </None>
+    <None Include="ViewRequestSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ViewRequestSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="ViewRequestSet.xss">
+      <DependentUpon>ViewRequestSet.xsd</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Toyota-Avalon-2019-1280-01.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Toyota-Avalon-2019-1280-07.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Toyota-Avalon-2019-1280-15.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Toyota-Camry_AU_Version-2012-1280-1c.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Toyota-Camry_AU_Version-2012-1280-21.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Toyota-Camry_AU_Version-2012-1280-24.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Toyota-Camry-2010-1280-05.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{C0C07587-41A7-46C8-8FBD-3F9C8EBE2DDC}" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

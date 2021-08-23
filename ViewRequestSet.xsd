@@ -1,0 +1,80 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="ViewRequestSet" targetNamespace="http://tempuri.org/ViewRequestSet.xsd" xmlns:mstns="http://tempuri.org/ViewRequestSet.xsd" xmlns="http://tempuri.org/ViewRequestSet.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="ProjectConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="ProjectConnectionString (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.GroupProject.Properties.Settings.GlobalReference.Default.ProjectConnectionString" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="ViewRequestTableAdapter" GeneratorDataComponentClassName="ViewRequestTableAdapter" Name="ViewRequest" UserDataComponentName="ViewRequestTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="ProjectConnectionString (Settings)" DbObjectName="Project.dbo.ViewRequest" DbObjectType="View" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT Req_No, Req_Date, Req_Destination, Returning, EmpID FROM dbo.ViewRequest</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="Req_No" DataSetColumn="Req_No" />
+              <Mapping SourceColumn="Req_Date" DataSetColumn="Req_Date" />
+              <Mapping SourceColumn="Req_Destination" DataSetColumn="Req_Destination" />
+              <Mapping SourceColumn="Returning" DataSetColumn="Returning" />
+              <Mapping SourceColumn="EmpID" DataSetColumn="EmpID" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="ViewRequestSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="True" msprop:Generator_DataSetName="ViewRequestSet" msprop:Generator_UserDSName="ViewRequestSet">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="ViewRequest" msprop:Generator_TableClassName="ViewRequestDataTable" msprop:Generator_TableVarName="tableViewRequest" msprop:Generator_TablePropName="ViewRequest" msprop:Generator_RowDeletingName="ViewRequestRowDeleting" msprop:Generator_RowChangingName="ViewRequestRowChanging" msprop:Generator_RowEvHandlerName="ViewRequestRowChangeEventHandler" msprop:Generator_RowDeletedName="ViewRequestRowDeleted" msprop:Generator_UserTableName="ViewRequest" msprop:Generator_RowChangedName="ViewRequestRowChanged" msprop:Generator_RowEvArgName="ViewRequestRowChangeEvent" msprop:Generator_RowClassName="ViewRequestRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Req_No" msdata:ReadOnly="true" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:Generator_ColumnVarNameInTable="columnReq_No" msprop:Generator_ColumnPropNameInRow="Req_No" msprop:Generator_ColumnPropNameInTable="Req_NoColumn" msprop:Generator_UserColumnName="Req_No" type="xs:int" />
+              <xs:element name="Req_Date" msprop:Generator_ColumnVarNameInTable="columnReq_Date" msprop:Generator_ColumnPropNameInRow="Req_Date" msprop:Generator_ColumnPropNameInTable="Req_DateColumn" msprop:Generator_UserColumnName="Req_Date" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="25" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Req_Destination" msprop:Generator_ColumnVarNameInTable="columnReq_Destination" msprop:Generator_ColumnPropNameInRow="Req_Destination" msprop:Generator_ColumnPropNameInTable="Req_DestinationColumn" msprop:Generator_UserColumnName="Req_Destination" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Returning" msprop:Generator_ColumnVarNameInTable="columnReturning" msprop:Generator_ColumnPropNameInRow="Returning" msprop:Generator_ColumnPropNameInTable="ReturningColumn" msprop:Generator_UserColumnName="Returning" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="5" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="EmpID" msprop:Generator_ColumnVarNameInTable="columnEmpID" msprop:Generator_ColumnPropNameInRow="EmpID" msprop:Generator_ColumnPropNameInTable="EmpIDColumn" msprop:Generator_UserColumnName="EmpID" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="5" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:ViewRequest" />
+      <xs:field xpath="mstns:Req_No" />
+    </xs:unique>
+  </xs:element>
+</xs:schema>
